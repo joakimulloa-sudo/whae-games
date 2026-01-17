@@ -14,54 +14,46 @@
     html, body {
       height: 100%;
       width: 100%;
-      overflow-x: hidden;
+      overflow: hidden;
     }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      min-height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px;
+      background: #f5f5f5;
+      height: 100%;
     }
 
     .game-container {
       background: white;
-      border-radius: 16px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-      max-width: 500px;
-      width: 100%;
-      overflow: hidden;
-      max-height: 95vh;
+      height: 100%;
       display: flex;
       flex-direction: column;
+      overflow: hidden;
     }
 
     .game-header {
       background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
       color: white;
-      padding: 15px 20px;
+      padding: 12px 16px;
       text-align: center;
       flex-shrink: 0;
     }
 
     .game-header h1 {
-      font-size: 1.3rem;
-      margin-bottom: 3px;
+      font-size: 1.1rem;
+      margin-bottom: 2px;
     }
 
     .game-header p {
       opacity: 0.9;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
     }
 
     .progress-bar {
       background: rgba(255, 255, 255, 0.3);
-      height: 6px;
+      height: 5px;
       border-radius: 3px;
-      margin-top: 10px;
+      margin-top: 8px;
       overflow: hidden;
     }
 
@@ -73,39 +65,39 @@
     }
 
     .game-body {
-      padding: 20px;
       flex: 1;
+      padding: 16px;
       overflow-y: auto;
     }
 
     .question-counter {
       text-align: center;
       color: #666;
-      margin-bottom: 12px;
-      font-size: 0.85rem;
+      margin-bottom: 10px;
+      font-size: 0.8rem;
     }
 
     .question-text {
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #333;
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       line-height: 1.4;
     }
 
     .options {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 8px;
     }
 
     .option-btn {
-      padding: 12px 15px;
+      padding: 10px 12px;
       border: 2px solid #e0e0e0;
-      border-radius: 10px;
+      border-radius: 8px;
       background: white;
       cursor: pointer;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       text-align: left;
       transition: all 0.2s ease;
       display: flex;
@@ -133,15 +125,15 @@
     }
 
     .option-letter {
-      width: 28px;
-      height: 28px;
+      width: 26px;
+      height: 26px;
       border-radius: 50%;
       background: #f0f0f0;
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: bold;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: #666;
       flex-shrink: 0;
     }
@@ -157,11 +149,11 @@
     }
 
     .feedback {
-      margin-top: 15px;
-      padding: 12px;
-      border-radius: 8px;
+      margin-top: 12px;
+      padding: 10px;
+      border-radius: 6px;
       text-align: center;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       display: none;
     }
 
@@ -180,17 +172,16 @@
     }
 
     .next-btn {
-      margin-top: 15px;
+      margin-top: 12px;
       width: 100%;
-      padding: 12px;
+      padding: 10px;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: white;
       border: none;
-      border-radius: 10px;
-      font-size: 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
       font-weight: 600;
       cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
       display: none;
     }
 
@@ -199,64 +190,66 @@
     }
 
     .next-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+      opacity: 0.9;
     }
 
-    /* Pantalla de inicio */
+    /* Pantallas de inicio y resultado */
     .start-screen, .result-screen {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
       text-align: center;
-      padding: 30px 20px;
     }
 
     .start-screen h2 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color: #333;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .start-screen p {
       color: #666;
-      margin-bottom: 25px;
-      line-height: 1.5;
-      font-size: 0.95rem;
+      margin-bottom: 20px;
+      line-height: 1.4;
+      font-size: 0.9rem;
     }
 
     .start-btn {
-      padding: 14px 40px;
+      padding: 12px 30px;
       background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
       color: white;
       border: none;
-      border-radius: 10px;
-      font-size: 1.1rem;
+      border-radius: 8px;
+      font-size: 1rem;
       font-weight: 600;
       cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
     }
 
     .start-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
+      opacity: 0.9;
     }
 
-    /* Pantalla de resultados */
+    /* Resultado */
     .result-screen {
       display: none;
     }
 
     .result-screen.show {
-      display: block;
+      display: flex;
     }
 
     .result-icon {
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
-      margin: 0 auto 15px;
+      margin-bottom: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 35px;
+      font-size: 28px;
     }
 
     .result-icon.success {
@@ -268,8 +261,8 @@
     }
 
     .result-screen h2 {
-      font-size: 1.5rem;
-      margin-bottom: 8px;
+      font-size: 1.3rem;
+      margin-bottom: 6px;
     }
 
     .result-screen h2.success {
@@ -282,18 +275,17 @@
 
     .result-screen > p {
       color: #666;
-      font-size: 0.9rem;
-      margin-bottom: 15px;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
     }
 
     .result-stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      margin: 20px 0;
-      padding: 15px;
+      display: flex;
+      gap: 15px;
+      margin: 12px 0;
+      padding: 12px 20px;
       background: #f8f9fa;
-      border-radius: 10px;
+      border-radius: 8px;
     }
 
     .stat-item {
@@ -301,44 +293,28 @@
     }
 
     .stat-value {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-weight: bold;
       color: #333;
     }
 
     .stat-label {
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       color: #666;
-      margin-top: 3px;
+      margin-top: 2px;
     }
 
     .whae-badge {
-      margin-top: 15px;
-      padding: 10px;
+      margin-top: 12px;
+      padding: 8px 12px;
       background: #e8f4fd;
       border-radius: 6px;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       color: #1976d2;
     }
 
     .hidden {
       display: none !important;
-    }
-
-    /* Responsive para pantallas pequeñas */
-    @media (max-height: 500px) {
-      .game-header {
-        padding: 10px 15px;
-      }
-      .game-header h1 {
-        font-size: 1.1rem;
-      }
-      .game-body {
-        padding: 15px;
-      }
-      .start-screen, .result-screen {
-        padding: 15px;
-      }
     }
   </style>
 </head>
@@ -361,7 +337,7 @@
         Necesitas <strong>70%</strong> para aprobar.
       </p>
       <button class="start-btn" onclick="startGame()">
-        🚀 Comenzar Quiz
+        🚀 Comenzar
       </button>
     </div>
 
@@ -372,7 +348,7 @@
       <div class="options" id="optionsContainer"></div>
       <div class="feedback" id="feedback"></div>
       <button class="next-btn" id="nextBtn" onclick="nextQuestion()">
-        Siguiente pregunta →
+        Siguiente →
       </button>
     </div>
 
@@ -404,9 +380,7 @@
   </div>
 
   <script>
-    // ===========================================
-    // INTEGRACIÓN WHAE - postMessage
-    // ===========================================
+    // INTEGRACIÓN WHAE
     const WHAeIntegration = {
       sendResult: function(result) {
         const payload = {
@@ -417,7 +391,6 @@
             completed: result.completed !== false,
             passed: result.score >= (result.maxScore * 0.7),
             timeSpent: result.timeSpent || 0,
-            attempts: result.attempts || 1,
             details: result.details || {}
           }
         };
@@ -427,117 +400,64 @@
           console.log('[WHAe] Resultado enviado:', payload);
           return true;
         } else {
-          console.log('[WHAe] Modo standalone (sin iframe):', payload);
+          console.log('[WHAe] Modo standalone:', payload);
           return false;
         }
       }
     };
 
-    // ===========================================
-    // PREGUNTAS DEL QUIZ
-    // ===========================================
+    // PREGUNTAS
     const questions = [
       {
         question: "¿Cuál es la función principal de un desfibrilador?",
-        options: [
-          "Medir la presión arterial",
-          "Restaurar el ritmo cardíaco normal",
-          "Administrar medicamentos",
-          "Monitorear el oxígeno en sangre"
-        ],
+        options: ["Medir presión arterial", "Restaurar ritmo cardíaco", "Administrar medicamentos", "Monitorear oxígeno"],
         correct: 1
       },
       {
         question: "¿Qué mide un oxímetro de pulso?",
-        options: [
-          "La temperatura corporal",
-          "La presión arterial",
-          "La saturación de oxígeno en sangre",
-          "El nivel de glucosa"
-        ],
+        options: ["Temperatura", "Presión arterial", "Saturación de oxígeno", "Nivel de glucosa"],
         correct: 2
       },
       {
-        question: "¿Para qué se utiliza un electrocardiógrafo (ECG)?",
-        options: [
-          "Tomar radiografías",
-          "Registrar la actividad eléctrica del corazón",
-          "Medir la capacidad pulmonar",
-          "Analizar muestras de sangre"
-        ],
+        question: "¿Para qué se usa un electrocardiógrafo (ECG)?",
+        options: ["Tomar radiografías", "Registrar actividad del corazón", "Medir capacidad pulmonar", "Analizar sangre"],
         correct: 1
       },
       {
-        question: "¿Qué equipo usa ondas de sonido para ver órganos internos?",
-        options: [
-          "Tomógrafo",
-          "Resonancia magnética",
-          "Ecógrafo (ultrasonido)",
-          "Rayos X"
-        ],
+        question: "¿Qué equipo usa ondas de sonido para ver órganos?",
+        options: ["Tomógrafo", "Resonancia magnética", "Ecógrafo", "Rayos X"],
         correct: 2
       },
       {
         question: "¿Cuál es la función de una bomba de infusión?",
-        options: [
-          "Extraer sangre del paciente",
-          "Administrar fluidos de forma controlada",
-          "Medir el ritmo cardíaco",
-          "Esterilizar instrumentos"
-        ],
+        options: ["Extraer sangre", "Administrar fluidos controlados", "Medir ritmo cardíaco", "Esterilizar"],
         correct: 1
       }
     ];
 
-    // ===========================================
-    // ESTADO DEL JUEGO
-    // ===========================================
-    let gameState = {
-      currentQuestion: 0,
-      score: 0,
-      startTime: null,
-      answered: false
-    };
+    let gameState = { currentQuestion: 0, score: 0, startTime: null, answered: false };
 
-    // ===========================================
-    // FUNCIONES DEL JUEGO
-    // ===========================================
     function startGame() {
-      gameState = {
-        currentQuestion: 0,
-        score: 0,
-        startTime: Date.now(),
-        answered: false
-      };
-
+      gameState = { currentQuestion: 0, score: 0, startTime: Date.now(), answered: false };
       document.getElementById('startScreen').classList.add('hidden');
       document.getElementById('gameScreen').classList.remove('hidden');
       document.getElementById('resultScreen').classList.remove('show');
-
       showQuestion();
     }
 
     function showQuestion() {
       const q = questions[gameState.currentQuestion];
-      
-      document.getElementById('questionCounter').textContent = 
-        `Pregunta ${gameState.currentQuestion + 1} de ${questions.length}`;
-      document.getElementById('progressFill').style.width = 
-        `${((gameState.currentQuestion) / questions.length) * 100}%`;
-
+      document.getElementById('questionCounter').textContent = `Pregunta ${gameState.currentQuestion + 1} de ${questions.length}`;
+      document.getElementById('progressFill').style.width = `${(gameState.currentQuestion / questions.length) * 100}%`;
       document.getElementById('questionText').textContent = q.question;
 
       const container = document.getElementById('optionsContainer');
       container.innerHTML = '';
-      
       const letters = ['A', 'B', 'C', 'D'];
       q.options.forEach((option, index) => {
         const btn = document.createElement('button');
         btn.className = 'option-btn';
-        btn.innerHTML = `
-          <span class="option-letter">${letters[index]}</span>
-          <span>${option}</span>
-        `;
+        btn.innerHTML = `<span class="option-letter">${letters[index]}</span><span>${option}</span>`;
         btn.onclick = () => selectAnswer(index);
         container.appendChild(btn);
       });
@@ -557,38 +477,25 @@
 
       buttons.forEach((btn, index) => {
         btn.disabled = true;
-        if (index === q.correct) {
-          btn.classList.add('correct');
-        } else if (index === selectedIndex && !isCorrect) {
-          btn.classList.add('incorrect');
-        }
+        if (index === q.correct) btn.classList.add('correct');
+        else if (index === selectedIndex && !isCorrect) btn.classList.add('incorrect');
       });
 
       const feedback = document.getElementById('feedback');
-      feedback.textContent = isCorrect 
-        ? '✅ ¡Correcto!' 
-        : `❌ Incorrecto. Era: ${q.options[q.correct]}`;
+      feedback.textContent = isCorrect ? '✅ ¡Correcto!' : `❌ Era: ${q.options[q.correct]}`;
       feedback.className = `feedback show ${isCorrect ? 'correct' : 'incorrect'}`;
 
-      if (isCorrect) {
-        gameState.score++;
-      }
+      if (isCorrect) gameState.score++;
 
       const nextBtn = document.getElementById('nextBtn');
-      nextBtn.textContent = gameState.currentQuestion < questions.length - 1 
-        ? 'Siguiente →' 
-        : 'Ver resultados 🏆';
+      nextBtn.textContent = gameState.currentQuestion < questions.length - 1 ? 'Siguiente →' : 'Ver resultados 🏆';
       nextBtn.classList.add('show');
     }
 
     function nextQuestion() {
       gameState.currentQuestion++;
-
-      if (gameState.currentQuestion < questions.length) {
-        showQuestion();
-      } else {
-        showResults();
-      }
+      if (gameState.currentQuestion < questions.length) showQuestion();
+      else showResults();
     }
 
     function showResults() {
@@ -621,31 +528,17 @@
 
       document.getElementById('statScore').textContent = `${gameState.score}/${questions.length}`;
       document.getElementById('statPercent').textContent = `${percentage.toFixed(0)}%`;
-      document.getElementById('statTime').textContent = formatTime(timeSpent);
+      document.getElementById('statTime').textContent = `${Math.floor(timeSpent/60)}:${(timeSpent%60).toString().padStart(2,'0')}`;
 
-      // *** ENVIAR RESULTADO A WHAE ***
       const sent = WHAeIntegration.sendResult({
         score: gameState.score * 20,
         maxScore: 100,
         completed: true,
         timeSpent: timeSpent,
-        details: {
-          correctAnswers: gameState.score,
-          totalQuestions: questions.length,
-          percentage: percentage
-        }
+        details: { correctAnswers: gameState.score, totalQuestions: questions.length, percentage: percentage }
       });
 
-      const badge = document.getElementById('whaeBadge');
-      badge.textContent = sent 
-        ? '✅ Resultado enviado a WHAe' 
-        : '📍 Modo independiente';
-    }
-
-    function formatTime(seconds) {
-      const mins = Math.floor(seconds / 60);
-      const secs = seconds % 60;
-      return `${mins}:${secs.toString().padStart(2, '0')}`;
+      document.getElementById('whaeBadge').textContent = sent ? '✅ Resultado enviado a WHAe' : '📍 Modo independiente';
     }
   </script>
 </body>
